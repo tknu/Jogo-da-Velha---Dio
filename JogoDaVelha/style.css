@@ -1,38 +1,99 @@
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body{
     text-align: center;
 }
 
-.quadrado{
+.espaco-jogo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+
+}
+
+.titulo{
     text-align: center;
-    width: 50px;
-    background: #eee;
-    display: inline-block;
+    margin-bottom: 20px;
+    color: orangered;
+}
+
+.board{
+    background: black;
+    display: flex;
+    justify-content: top;
+    align-items: top;
+    flex-direction: row;
+    margin-bottom: 20px;
+    
+}
+
+.quadrado{
+    background: white;
+    width: 115px;
     padding: 40px;
-    font-size: 50px;
-    margin: 5px;
     cursor: pointer;
-    color: #eee;
+    font-size: 50px;
+    
+
+}
+
+
+.linha1 .quadrado:nth-child(1){
+    margin-right: 4px;
+    margin-bottom: 4px;
+}
+
+.linha1 .quadrado:nth-child(2){
+    margin-right: 4px;
+    margin-bottom: 4px;
+}
+
+.linha2 .quadrado:nth-child(1){
+    margin-right: 4px;
+    margin-bottom: 4px;
+}
+
+.linha2 .quadrado:nth-child(2){
+    margin-right: 4px;
+    margin-bottom: 4px;
+}
+
+.linha3 .quadrado:nth-child(1){
+    margin-bottom: 4px;
+}
+
+.linha3 .quadrado:nth-child(2){
+    margin-bottom: 4px;
 }
 
 .jogador-vencedor{
     font-size: 20px;
-    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.quemjoga{
+    margin-bottom: 10px;
 }
 
 .button{
     margin-top: 10px;
-    width: 200px;
-    background-color: #eee;
-    height: 30px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
     font-size: 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: green;
+    height: 35px;
+    width: 180px;
+    color: white;
+    cursor: pointer;
 }
 
 .button:hover{
-    background: green;
-    color: white;
+    background-color: #33ff33;
+    color: black;
+    font-weight: bold;
 }
